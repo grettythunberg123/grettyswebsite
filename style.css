@@ -158,10 +158,9 @@ h1 span {
   text-align: center;
   font-size: 14px;
   margin-top: 40px;
-}
-#footer p {
   text-transform: uppercase;
 }
+
 
 /* Gallery Styles */
 /* Character Gallery with Descriptions */
@@ -245,15 +244,6 @@ h1 span {
   text-align: justify;
 }
 
-/* Footer */
-#footer {
-  background-color: #222;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 14px;
-  margin-top: 40px;
-  color: #ccc;
-}
 
 .welcome-text {
   max-width: 900px;
