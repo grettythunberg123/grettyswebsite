@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lord of the Rings</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/mobile.css"
+      media="screen and (max-width : 568px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="mobile.js"></script>
+  </head>
+  <body>
+    <!-- Template Credit -->
+    <div class="template-credit">
+      Template inspired by
+      <a href="https://rannah.goldenfab.com/" target="_blank"
+        >Rannah by GoldenFab</a
+      >
+    </div>
+
+    <!-- Header -->
+    <div id="header">
+      <a href="index.html" class="logo">
+        <img src="images/logo.jpg" alt="Lord of the Rings Logo" />
+      </a>
+      <ul id="navigation">
+        <li class="selected"><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Banner Image -->
+    <div id="main-banner">
+      <img src="images/lotr-logo.jpg" alt="Middle-earth" />
+    </div>
+
+    <!-- Page Title -->
+    <h1><span>Welcome to Middle-earth</span></h1>
+
+    <!-- Character Gallery -->
+    <ul class="character-gallery">
+      <li>
+        <img
+          src="images/frodo.jpg"
+          alt="Frodo Baggins"
+          class="character-image"
+        />
+        <span>Frodo Baggins</span>
+      </li>
+      <li>
+        <img
+          src="images/gandalf.jpg"
+          alt="Gandalf the Grey"
+          class="character-image"
+        />
+        <span>Gandalf the Grey</span>
+      </li>
+      <li>
+        <img src="images/aragorn.jpg" alt="Aragorn" class="character-image" />
+        <span>Aragorn</span>
+      </li>
+    </ul>
+
+    <!-- NEW Welcome Text Section -->
+    <section class="welcome-text">
+      <h2>Welcome to my Lord of the Rings Website</h2>
+      <p>
+        This website is dedicated to the characters of The Lord of the Rings,
+        with a special focus on the nine members of the Fellowship and the
+        complex figure of Gollum. Here you'll find thoughtful character profiles
+        that explore each individual’s role, strengths, and personality — from
+        Frodo’s quiet resolve to Aragorn’s leadership, from Gandalf’s wisdom to
+        Sam’s unwavering loyalty.
+      </p>
+      <p>
+        Whether you're revisiting the story or discovering new details along the
+        way, this site offers a place to appreciate the people behind the quest
+        — not just as heroes of legend, but as characters with flaws, growth,
+        and heart.
+      </p>
+      <p>Thanks for visiting, and enjoy your journey through the Fellowship.</p>
+    </section>
+
+    <!-- Modal -->
+    <div id="image-modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-image" />
+      <div id="caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div>
+        <p>&copy; Greta Huber - 24224011, all rights reserved 2025</p>
+      </div>
+    </div>
+  </body>
+</html>

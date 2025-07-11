@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  background-color: #111;
+  color: #fff;
+}
+/* Template Credit Banner */
+.template-credit {
+  background-color: #1a1a1a;
+  color: #aaa;
+  font-size: 12px;
+  padding: 8px 20px;
+  text-align: right;
+  border-bottom: 1px solid #333;
+}
+
+.template-credit a {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+.template-credit a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 20px;
+}
+
+#header a.logo img {
+  height: 80px;
+}
+
+#navigation {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+#navigation li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#navigation li.selected a {
+  font-weight: bold;
+  color: goldenrod;
+}
+
+/* Main Banner Image */
+#main-banner img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(70%);
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  font-size: 42px;
+  margin: 40px 0 10px;
+}
+
+h1 span {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid goldenrod;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Character Gallery */
+.character-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.character-gallery li {
+  text-align: center;
+  flex: 0 1 200px;
+}
+
+.character-image {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.character-image:hover {
+  transform: scale(1.05);
+}
+
+.character-gallery span {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 60%;
+  border-radius: 10px;
+}
+
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#caption {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Footer */
+#footer {
+  background-color: #222;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* Gallery Styles */
+/* Character Gallery with Descriptions */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gallery li {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  text-align: center;
+  max-width: 250px;
+  flex: 0 1 250px;
+  transition: transform 0.3s ease;
+}
+
+.gallery li:hover {
+  transform: scale(1.03);
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.gallery h3 {
+  margin: 15px 0 5px;
+  font-size: 20px;
+  color: goldenrod;
+}
+
+.gallery h4 {
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: normal;
+  color: #ccc;
+}
+
+.gallery p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Article Section for About Page */
+.article {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-left: 6px solid goldenrod;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+  line-height: 1.8;
+}
+
+.article h3 {
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: goldenrod;
+}
+
+.article p {
+  font-size: 17px;
+  color: #e0e0e0;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+/* Footer */
+#footer {
+  background-color: #222;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+  color: #ccc;
+}
+
+.welcome-text {
+  max-width: 900px;
+  margin: 40px auto 80px auto;
+  padding: 20px 30px;
+  background-color: rgba(255, 215, 0, 0.05); /* subtle golden transparent bg */
+  border-radius: 12px;
+  color: #f5f5dc; /* light beige for easy reading */
+  font-family: "Cinzel", serif;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(218, 165, 32, 0.3);
+}
+
+.welcome-text h2 {
+  color: goldenrod;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.welcome-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
