@@ -1,16 +1,24 @@
-window.addEventListener("load", function () {
-  // Show alert only on the home page
+window.addEventListener("DOMContentLoaded", function () {
+  const currentURL = window.location.href.toLowerCase();
   const path = window.location.pathname.toLowerCase();
+
+  // Match home page URL
   const isHomePage =
     path === "/" ||
     path.endsWith("/index.html") ||
-    path.includes("/gretawebsite/") && (path.endsWith("/") || path.endsWith("index.html"));
+    currentURL.includes("gretawebsite") && (path.endsWith("/") || path.endsWith("index.html"));
 
   if (isHomePage) {
-    alert("Even the smallest person can change the course of the future. – Galadriel");
+    // Prevent alert from showing again via back/forward navigation
+    const alertShown = sessionStorage.getItem("welcomeAlertShown");
+
+    if (!alertShown) {
+      alert("Welcome to Middle-earth!");
+      sessionStorage.setItem("welcomeAlertShown", "true");
+    }
   }
 
-  // Optional mobile nav toggle (keep if you're using it)
+  // Optional: Mobile nav menu toggle setup
   const getNavi = document.getElementById("navigation");
   if (getNavi) {
     const mobile = document.createElement("span");
