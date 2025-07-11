@@ -1,24 +1,16 @@
 window.addEventListener("DOMContentLoaded", function () {
-  const currentURL = window.location.href.toLowerCase();
-  const path = window.location.pathname.toLowerCase();
-
-  // Match home page URL
+  // ✅ Detect if current page is the homepage
   const isHomePage =
-    path === "/" ||
-    path.endsWith("/index.html") ||
-    currentURL.includes("gretawebsite") && (path.endsWith("/") || path.endsWith("index.html"));
+    location.pathname === "/gretawebsite/" ||
+    location.pathname === "/gretawebsite/index.html" ||
+    location.pathname === "/" ||
+    location.pathname.endsWith("/index.html");
 
   if (isHomePage) {
-    // Prevent alert from showing again via back/forward navigation
-    const alertShown = sessionStorage.getItem("welcomeAlertShown");
-
-    if (!alertShown) {
-      alert("Welcome to Middle-earth!");
-      sessionStorage.setItem("welcomeAlertShown", "true");
-    }
+    alert("“Even the smallest person can change the course of the future.” – Galadriel");
   }
 
-  // Optional: Mobile nav menu toggle setup
+  // Optional: Responsive mobile navigation toggle
   const getNavi = document.getElementById("navigation");
   if (getNavi) {
     const mobile = document.createElement("span");
