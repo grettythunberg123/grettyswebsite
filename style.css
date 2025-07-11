@@ -159,6 +159,9 @@ h1 span {
   font-size: 14px;
   margin-top: 40px;
 }
+#footer p {
+  text-transform: uppercase;
+}
 
 /* Gallery Styles */
 /* Character Gallery with Descriptions */
